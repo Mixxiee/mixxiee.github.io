@@ -248,9 +248,7 @@
               <h5 class="card-title">Team members</h5>
 		    
 		    <!-- Add new team member  -->
-              <button type="button" class="btn btn-primary" i class="bi bi-person-add" data-bs-toggle="modal" data-bs-target="#modalDialogScrollable">
-                Add new member
-              </button>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDialogScrollable"><i class="bi bi-person-add"></i> Add new member</button>
               <div class="modal fade" id="modalDialogScrollable" tabindex="-1">
                 <div class="modal-dialog modal-dialog-scrollable">
                   <div class="modal-content">
@@ -297,6 +295,25 @@
 		    <td>
 			<button type="button" class="btn btn-secondary"><i class="bi bi-pencil-square"></i></button>
               		<button type="button" class="btn btn-secondary"><i class="bi bi-trash"></i></button>
+			<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#resetpinModal"><i class="bi bi-trash"></i></button>
+		<div class="modal fade" id="resetpinModal" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Reset pin</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+			    Are you sure that you want to reset this pin?			    
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                      <button type="button" class="btn btn-success">Yes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             <!-- End Pin reset Modal-->
 		   </td>
                   </tr>
                   <tr>
