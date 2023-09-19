@@ -363,7 +363,99 @@
                  <div class="card-body">
                   <h5 class="card-title"><span>TOTAL 2 USERS</span></h5>
 		  <h6 class="card-title">Manager</h6>
-		  <a href="#" class="card-link">Edit role</a>
+			 
+		<!-- Edit manager role -->
+		  <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#modalDialogEditManager">Edit role</a>
+              <div class="modal fade" id="modalDialogEditManager" tabindex="-1">
+                <div class="modal-dialog modal-dialog-scrollable modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Edit role</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+			    
+                      <!-- Vertical Form -->
+              <form class="row g-3">
+                <div class="col-12">
+                  <label for="inputNanme4" class="form-label">Role name</label>
+                  <input type="text" class="form-control" id="inputNanme4" placeholder="Manager">
+                </div>
+                <div class="col-12">
+                  <h5 class="modal-title">Set role permissions</h5>
+                </div>
+
+                <fieldset class="row mb-3">
+                  <legend class="col-form-label col-sm-2 pt-0">Administrator Access</legend>
+                  <div class="col-sm-10">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="gridCheck1">
+                      <label class="form-check-label" for="gridCheck1">
+                        Select all
+                      </label>
+                    </div>
+		</fieldset>
+
+		<fieldset class="row mb-3">
+                  <legend class="col-form-label col-sm-2 pt-0">User management</legend>
+                  <div class="col-sm-10">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="gridCheck1">
+                      <label class="form-check-label" for="gridCheck1">
+                        Read
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="gridCheck2">
+                      <label class="form-check-label" for="gridCheck2">
+                        Write
+                      </label>
+                    </div>
+		    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="gridCheck3">
+                      <label class="form-check-label" for="gridCheck3">
+                        Create
+                      </label>
+                    </div>  
+                  </div>
+                </fieldset>
+
+		      		<fieldset class="row mb-3">
+                  <legend class="col-form-label col-sm-2 pt-0">Content management</legend>
+                  <div class="col-sm-10">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="gridCheck1">
+                      <label class="form-check-label" for="gridCheck1">
+                        Read
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="gridCheck2">
+                      <label class="form-check-label" for="gridCheck2">
+                        Write
+                      </label>
+                    </div>
+		    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="gridCheck3">
+                      <label class="form-check-label" for="gridCheck3">
+                        Create
+                      </label>
+                    </div>  
+                  </div>
+                </fieldset>
+		      
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="reset" class="btn btn-secondary">Reset</button>
+                </div>
+              </form>
+	         <!-- Vertical Form -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+	<!-- End Modal Dialog Scrollable-->
+	<!-- End edit manager role-->
 
                   <div class="d-flex align-items-center">
 
