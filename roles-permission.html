@@ -245,7 +245,7 @@
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Permissions</h5>
+              <h5 class="card-title">Permissions list</h5>
 		    
                <div class="float-end">
 		       
@@ -255,7 +255,7 @@
                 <div class="modal-dialog modal-dialog-scrollable">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title">Add team member</h5>
+                      <h5 class="modal-title">Add Permission</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -263,11 +263,11 @@
                       <!-- Vertical Form -->
               <form class="row g-3">
                 <div class="col-12">
-                  <label for="inputNanme4" class="form-label">Full Name</label>
-                  <input type="text" class="form-control" id="inputNanme4" placeholder="John Doe">
+                  <label for="inputNanme4" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="inputNanme4" placeholder="Management">
                 </div>
                 <div class="col-12">
-                  <label for="inputEmail4" class="form-label">Email</label>
+                  <label for="inputEmail4" class="form-label">Test</label>
                   <input type="email" class="form-control" id="inputEmail4" placeholder="hello@example.com">
                 </div>
                 <div class="col-12">
@@ -305,8 +305,6 @@
                   </div>
                 </div>
               </div><!-- End Modal Dialog Scrollable-->
-		    
-              	<button type="button" class="btn btn-secondary"><i class="bi bi-download"></i></button>
 
  </div> 
 		    
@@ -317,12 +315,9 @@
                 <thead>
                   <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Full name</th>
-		    <th scope="col">Phone number</th>
-                    <th scope="col">Email</th>  
-                    <th scope="col">Role</th>
-                    <th scope="col">Status</th>
-		    <th scope="col">Date created</th>
+                    <th scope="col">Name</th>
+		    <th scope="col">Assigned to</th>
+		    <th scope="col">Created date</th>
 		    <th scope="col">Actions</th>
 
                   </tr>
@@ -330,11 +325,8 @@
                 <tbody>
                   <tr>
                     <th scope="row">1</th>
-                    <td>Jeremy Lomp</td>
-		    <td>+5999 555 5555</td>
-                    <td>j.lomp@example.com</td>
-                    <td>Administrator</td>
-                    <td>Active</td>
+                    <td>Management</td>
+		    <td>Administrator</td>
                     <td>dd-mmm-yyyy hh:mm:ss</td>
 		    <td>
 			 <!-- Edit button -->   
