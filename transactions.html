@@ -261,7 +261,7 @@
 		    <th scope="col">Type</th>
 		    <th scope="col">Status</th>
                     <th scope="col">Date</th>
-	            <th scope="col">Adtions</th>
+	            <th scope="col">Actions</th>
 
                   </tr>
                 </thead>
@@ -274,7 +274,25 @@
 		    <td>123456789</td>
                     <td>Groceries</td>
                     <td>P2P</td>
-		    <td><button type="button" class="btn btn-link">unsuccessful</button></td>
+		    <td><button type="button" class="btn btn-link">unsuccessful</button>
+                <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#smallModal">Unsuccessful</button>
+
+              <div class="modal fade" id="unsuccessfullModal" tabindex="-1">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Unsuccessful transaction</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+			    This payment was unsuccessful due to insufficient funds
+                      </div>
+                  </div>
+                </div>
+              </div><!-- End Small Modal-->
+
+			    
+                    </td>
                     <td>dd-mmm-yyyy hh:mm:ss</td>
                   </tr>
                   <tr>
