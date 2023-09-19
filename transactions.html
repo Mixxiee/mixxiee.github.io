@@ -274,10 +274,9 @@
 		    <td>123456789</td>
                     <td>Groceries</td>
                     <td>P2P</td>
-		    <td><button type="button" class="btn btn-link">unsuccessful</button>
-                <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#smallModal">Unsuccessful</button>
+		    <td><button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#unsuccessfulModal">Unsuccessful</button>
 
-              <div class="modal fade" id="unsuccessfullModal" tabindex="-1">
+              <div class="modal fade" id="unsuccessfulModal" tabindex="-1">
                 <div class="modal-dialog modal-sm">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -294,6 +293,28 @@
 			    
                     </td>
                     <td>dd-mmm-yyyy hh:mm:ss</td>
+		    <td>
+			<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#revertModal"><i class="bi bi-arrow-clockwise"></i></button>
+		<div class="modal fade" id="revertModal" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Revert transaction</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+			    Are you sure that you want to revert this transaction?			    
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                      <button type="submit" class="btn btn-success" data-bs-dismiss="modal">Yes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             <!-- End delete user Modal-->
+		<!-- End trash button -->
+		    </td>
                   </tr>
                   <tr>
                     <th scope="row">2</th>
