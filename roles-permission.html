@@ -554,17 +554,74 @@
                   </div>
                 </div>
               </div>
-             <!-- End delete user Modal-->
+             <!-- End delete permission Modal-->
 		<!-- End trash button -->
 			    
 		   </td>
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
-                    <td>Bridie Kessler</td>
-                    <td>Developer</td>
-                    <td>35</td>
-                    <td>2014-12-05</td>
+                                        <th scope="row">2</th>
+                    <td>Manage billing & roles</td>
+		    <td>
+			    <span class="badge bg-primary">Administrator</span>
+			    <span class="badge bg-info text-dark">Manager</span>
+		   </td>
+                    <td>dd-mmm-yyyy hh:mm:ss</td>
+		    <td>
+			 <!-- Edit button -->   
+		<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalDialogEditPerm"><i class="bi bi-pencil-square"></i></button>
+              <div class="modal fade" id="modalDialogEditPerm" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Edit permission</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+			    
+                      <!-- Vertical Form -->
+              <form class="row g-3">
+                <div class="col-12">
+                  <label for="inputNanme4" class="form-label">Permission name</label>
+                  <input type="text" class="form-control" id="inputNanme4" placeholder="Management">
+                </div>
+                
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Update</button>
+                </div>
+              </form>
+	         <!-- Vertical Form -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+	<!-- End Modal Dialog Edit Permission-->
+		<!-- End Edit button-->
+			    
+			    
+		<!-- Trash button -->	    
+			<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#deleteModal"><i class="bi bi-trash"></i></button>
+		<div class="modal fade" id="deleteModal" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Delete permission</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+			    Are you sure that you want to delete this permission?			    
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                      <button type="submit" class="btn btn-success" data-bs-dismiss="modal">Yes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             <!-- End delete permission Modal-->
+		<!-- End trash button -->
+			    
+		   </td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>
