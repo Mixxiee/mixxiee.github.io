@@ -340,7 +340,7 @@
                   <div class="modal-content">
                     <div class="modal-header">
                       <h5 class="modal-title">Add new role</h5>
-			    <h6 class="modal-title">Set role permissions</h6>
+			    <h6 class="modal-subtitle">Set role permissions</h6>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -355,20 +355,38 @@
                   <h5 class="modal-title">Role permissions</h5>
                 </div>
                 <fieldset class="row mb-3">
-                  <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                  <legend class="col-form-label col-sm-2 pt-0">Administrator Access</legend>
                   <div class="col-sm-10">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                      <label class="form-check-label" for="gridRadios1">
-                        First radio
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="gridCheck1">
+                      <label class="form-check-label" for="gridCheck1">
+                        Select all
                       </label>
                     </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                      <label class="form-check-label" for="gridRadios2">
-                        Second radio
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="gridCheck1">
+                      <label class="form-check-label" for="gridCheck1">
+                        Select all
                       </label>
                     </div>
+		</fieldset>
+
+		<fieldset class="row mb-3">
+                  <legend class="col-form-label col-sm-2 pt-0">User management</legend>
+                  <div class="col-sm-10">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="gridCheck1">
+                      <label class="form-check-label" for="gridCheck1">
+                        Read
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="gridCheck2">
+                      <label class="form-check-label" for="gridCheck2">
+                        Write
+                      </label>
+                    </div>
+			  
                     <div class="form-check disabled">
                       <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
                       <label class="form-check-label" for="gridRadios3">
