@@ -812,12 +812,16 @@
 
           <div class="card">
             <div class="card-body">
+              
+              <div class="d-flex flex-row justify-content-between align-items-center">
               <h5 class="card-title">Permission list</h5>
-		    
+              <div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDialogPermission">Add permision</button>
+              </div>
+            </div>
                <div class="float-end">
 		       
       <!-- Add new permission  -->
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDialogPermission">Add permision</button>
               <div class="modal fade" id="modalDialogPermission" tabindex="-1">
                 <div class="modal-dialog">
                   <div class="modal-content">
@@ -850,6 +854,7 @@
  </div> 
 		    
 
+ <div class="table-responsive">
 
               <!-- Table with stripped rows -->
              <table class="table datatable">
@@ -873,7 +878,7 @@
                     <td>dd-mmm-yyyy hh:mm:ss</td>
 		    <td>
 			 <!-- Edit button -->   
-		<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalDialogEditPerm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit permission"><i class="bi bi-pencil-square"></i></button>
+		<a type="button" class="" data-bs-toggle="modal" data-bs-target="#modalDialogEditPerm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit permission"><i class="bi bi-pencil-square"></i></a>
               <div class="modal fade" id="modalDialogEditPerm" tabindex="-1">
                 <div class="modal-dialog">
                   <div class="modal-content">
@@ -904,7 +909,7 @@
 			    
 			    
 		<!-- Trash button -->	    
-			<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#deleteModal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete permission"><i class="bi bi-trash"></i></button>
+			<a type="button" class="" data-bs-toggle="modal" data-bs-target="#deleteModal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete permission"><i class="bi bi-trash"></i></a>
 		<div class="modal fade" id="deleteModal" tabindex="-1">
                 <div class="modal-dialog">
                   <div class="modal-content">
@@ -937,7 +942,7 @@
                     <td>dd-mmm-yyyy hh:mm:ss</td>
 		    <td>
 			 <!-- Edit button -->   
-		<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalDialogEditPerm2" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit permission"><i class="bi bi-pencil-square"></i></button>
+		<a type="button" class="" data-bs-toggle="modal" data-bs-target="#modalDialogEditPerm2" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit permission"><i class="bi bi-pencil-square"></i></a>
               <div class="modal fade" id="modalDialogEditPerm2" tabindex="-1">
                 <div class="modal-dialog">
                   <div class="modal-content">
@@ -968,7 +973,7 @@
 			    
 			    
 		<!-- Trash button -->	    
-			<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#deleteModal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete permission"><i class="bi bi-trash"></i></button>
+			<a type="button" class="" data-bs-toggle="modal" data-bs-target="#deleteModal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete permission"><i class="bi bi-trash"></i></a>
 		<div class="modal fade" id="deleteModal" tabindex="-1">
                 <div class="modal-dialog">
                   <div class="modal-content">
@@ -1015,7 +1020,7 @@
                 </tbody>
               </table>
               <!-- End Table with stripped rows -->
-
+</div>
             </div>
           </div>
 
