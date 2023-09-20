@@ -812,20 +812,30 @@
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Permission list</h5>
-		    
-               <div class="float-end">
-		       
-      <!-- Add new permission  -->
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDialogPermission">Add permision</button>
-              <div class="modal fade" id="modalDialogPermission" tabindex="-1">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title">Add new permission</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
+		<div class="d-flex flex-row justify-content-between align-items-center">
+              	  <h5 class="card-title">Permission list</h5>
+		  <div>     
+	      
+	              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDialogPermission">Add permision</button>
+		      <button type="button" class="btn btn-secondary" data-bs-toggle="dropdown"><i class="bi bi-download"></i></button>
+                       <ul class="dropdown-menu dropdown-menu-end">
+                    	 <li><a class="dropdown-item" href="#"><i class="ri-printer-line"></i>Print</a></li>
+		     	             <li><a class="dropdown-item" href="#"><i class="ri-file-excel-2-line"></i>Csv</a></li>
+                    	 <li><a class="dropdown-item" href="#"><i class="bx bxs-file-pdf"></i>PDF</a></li>
+                       </ul>
+                      <button type="button" class="btn btn-secondary"><i class="bi bi-layout-three-columns"></i></button>
+                  </div>
+                </div>
+			  
+		     <!-- Add new permission  -->
+	              <div class="modal fade" id="modalDialogPermission" tabindex="-1">
+	                <div class="modal-dialog">
+	                  <div class="modal-content">
+	                    <div class="modal-header">
+	                      <h5 class="modal-title">Add new permission</h5>
+	                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	                    </div>
+	                    <div class="modal-body">
 			    
                       <!-- Vertical Form -->
               <form class="row g-3">
