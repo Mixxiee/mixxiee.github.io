@@ -268,7 +268,59 @@
 <!-- Blank Card -->		
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Balance</h5>
+              <h5 class="card-title">Column Chart</h5>
+
+              <!-- Column Chart -->
+              <div id="columnChart"></div>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  new ApexCharts(document.querySelector("#columnChart"), {
+                    series: [{
+                      name: 'User app usage',
+                      data: [10, 2, 8, 15, 14', 6, 18', 7', 2, 20, 11, 2, 5, 14, 15, 3, 9]
+                    }],
+                    chart: {
+                      type: 'bar',
+                      height: 350
+                    },
+                    plotOptions: {
+                      bar: {
+                        horizontal: false,
+                        columnWidth: '55%',
+                        endingShape: 'rounded'
+                      },
+                    },
+                    dataLabels: {
+                      enabled: false
+                    },
+                    stroke: {
+                      show: true,
+                      width: 2,
+                      colors: ['transparent']
+                    },
+                    xaxis: {
+                      categories: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17'],
+                    },
+                    yaxis: {
+                      title: {
+                        text: 'minutes'
+                      }
+                    },
+                    fill: {
+                      opacity: 1
+                    },
+                    tooltip: {
+                      y: {
+                        formatter: function(val) {
+                          return "$ " + val + " thousands"
+                        }
+                      }
+                    }
+                  }).render();
+                });
+              </script>
+              <!-- End Column Chart -->
 		
           </div>
 	</div>
