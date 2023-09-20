@@ -248,7 +248,12 @@
               <div class="d-flex flex-row justify-content-between align-items-center">
               <h5 class="card-title">Transaction history</h5>
               <div>
-                <button type="button" class="btn btn-secondary"><i class="bi bi-download"></i></button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="dropdown"><i class="bi bi-download"></i></button>
+                  	<ul class="dropdown-menu dropdown-menu-end">
+                    	 <li><a class="dropdown-item" href="#"><i class="ri-printer-line"></i>Print</a></li>
+		     	 <li><a class="dropdown-item" href="#"><i class="ri-file-excel-2-line"></i>Csv</a></li>
+                    	 <li><a class="dropdown-item" href="#"><i class="bx bxs-file-pdf"></i>PDF</a></li>
+                  	</ul>
                 <button type="button" class="btn btn-secondary"><i class="bi bi-layout-three-columns"></i></button>
               </div>
             </div>
@@ -300,7 +305,7 @@
                     </td>
                     <td>dd-mmm-yyyy hh:mm:ss</td>
 		    <td>
-			<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#revertModal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Revert transaction"><i class="ri-arrow-go-back-line"></i></button>
+			<a type="button" class="" data-bs-toggle="modal" data-bs-target="#revertModal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Revert transaction"><i class="ri-arrow-go-back-line" style="font-size: 20px;"></i></a>
 		<div class="modal fade" id="revertModal" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
