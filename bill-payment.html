@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dashboard - CHIP admin</title>
+  <title>Bill payments - CHIP admin</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -176,7 +176,7 @@
             </a>
           </li>
           <li>
-            <a href="components-badges.html">
+            <a href="push-notification.html">
               <i class="bi bi-circle"></i><span>Push notifications</span>
             </a>
           </li>
@@ -228,12 +228,12 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Transactions</h1>
+      <h1>Bill payments</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
           <li class="breadcrumb-item">Bill payments</li>
-          <li class="breadcrumb-item active">Data</li>
+          <li class="breadcrumb-item active">History</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -245,8 +245,20 @@
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Bill payment history</h5>
+		<div class="d-flex flex-row justify-content-between align-items-center">
+              	<h5 class="card-title">Bill payment history</h5>
+		<div>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="dropdown"><i class="bi bi-download"></i></button>
+                  	<ul class="dropdown-menu dropdown-menu-end">
+                    	 <li><a class="dropdown-item" href="#"><i class="ri-printer-line"></i>Print</a></li>
+		     	 <li><a class="dropdown-item" href="#"><i class="ri-file-excel-2-line"></i>Csv</a></li>
+                    	 <li><a class="dropdown-item" href="#"><i class="bx bxs-file-pdf"></i>PDF</a></li>
+                  	</ul>
+                <button type="button" class="btn btn-secondary"><i class="bi bi-layout-three-columns"></i></button>
+              </div>
+            </div>
               
+              <div class="table-responsive">		    
 
               <!-- Table with stripped rows -->
              <table class="table datatable">
@@ -270,7 +282,7 @@
                     <td>Raheem Lehner</td>
                     <td>Pagatinu</td>
                     <td>NAf 140.00</td>
-		    <td>123456789</td>
+		    <td>#123456789</td>
                     <td>Utility</td>
                     <td>123-456</td>
 		    <td>Succesful</td>
@@ -279,9 +291,28 @@
                   <tr>
                     <th scope="row">2</th>
                     <td>Bridie Kessler</td>
-                    <td>Developer</td>
-                    <td>35</td>
-                    <td>2014-12-05</td>
+                    <td>Pagatinu</td>
+                    <td>NAf 50.00</td>
+		    <td>#234567891</td>
+                    <td>Utility</td>
+                    <td>123-458</td>
+		    <td>
+			<a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#unsuccessfulModal">Unsuccessful</a>
+              		 <div class="modal fade" id="unsuccessfulModal" tabindex="-1">
+                	  <div class="modal-dialog modal-sm modal-dialog-centered">
+                           <div class="modal-content">
+                            <div class="modal-header">
+                        	<h5 class="modal-title">Unsuccessful transaction</h5>
+                      		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    	    </div>
+                    	<div class="modal-body">
+			    This payment was unsuccessful due to insufficient funds
+                       </div>
+                         </div>
+                        </div>
+                      </div><!-- End Small Modal-->
+		    </td>
+                    <td>dd-mmm-yyyy hh:mm:ss</td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>

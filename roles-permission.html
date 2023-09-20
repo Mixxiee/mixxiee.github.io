@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dashboard - CHIP admin</title>
+  <title>Roles & Permissions - CHIP admin</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -176,7 +176,7 @@
             </a>
           </li>
           <li>
-            <a class="nav-link collapsed" href="components-badges.html">
+            <a class="nav-link collapsed" href="push-notification.html">
               <i class="bi bi-circle"></i><span>Push notifications</span>
             </a>
           </li>
@@ -812,24 +812,30 @@
 
           <div class="card">
             <div class="card-body">
-              
-              <div class="d-flex flex-row justify-content-between align-items-center">
-              <h5 class="card-title">Permission list</h5>
-              <div>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDialogPermission">Add permision</button>
-              </div>
-            </div>
-               <div class="float-end">
-		       
-      <!-- Add new permission  -->
-              <div class="modal fade" id="modalDialogPermission" tabindex="-1">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title">Add new permission</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
+		<div class="d-flex flex-row justify-content-between align-items-center">
+              	  <h5 class="card-title">Permission list</h5>
+		  <div>     
+	      
+	              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDialogPermission">Add new permision</button>
+		      <button type="button" class="btn btn-secondary" data-bs-toggle="dropdown"><i class="bi bi-download"></i></button>
+                       <ul class="dropdown-menu dropdown-menu-end">
+                    	 <li><a class="dropdown-item" href="#"><i class="ri-printer-line"></i>Print</a></li>
+		     	             <li><a class="dropdown-item" href="#"><i class="ri-file-excel-2-line"></i>Csv</a></li>
+                    	 <li><a class="dropdown-item" href="#"><i class="bx bxs-file-pdf"></i>PDF</a></li>
+                       </ul>
+                      <button type="button" class="btn btn-secondary"><i class="bi bi-layout-three-columns"></i></button>
+                  </div>
+                </div>
+			  
+		     <!-- Add new permission  -->
+	              <div class="modal fade" id="modalDialogPermission" tabindex="-1">
+	                <div class="modal-dialog">
+	                  <div class="modal-content">
+	                    <div class="modal-header">
+	                      <h5 class="modal-title">Add new permission</h5>
+	                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	                    </div>
+	                    <div class="modal-body">
 			    
                       <!-- Vertical Form -->
               <form class="row g-3">
@@ -853,9 +859,7 @@
 
  </div> 
 		    
-
- <div class="table-responsive">
-
+		<div class="table-responsive">
               <!-- Table with stripped rows -->
              <table class="table datatable">
                 <thead>
@@ -877,8 +881,8 @@
 		   </td>
                     <td>dd-mmm-yyyy hh:mm:ss</td>
 		    <td>
-			 <!-- Edit button -->   
-		<a type="button" class="" data-bs-toggle="modal" data-bs-target="#modalDialogEditPerm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit permission"><i class="bi bi-pencil-square"></i></a>
+			 <!-- Edit button --> 
+		<a type="button" class="" data-bs-toggle="modal" data-bs-target="#modalDialogEditPerm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit permission"><i class="bi bi-pencil-square" style="font-size: 20px;"></i></a>
               <div class="modal fade" id="modalDialogEditPerm" tabindex="-1">
                 <div class="modal-dialog">
                   <div class="modal-content">
@@ -909,7 +913,7 @@
 			    
 			    
 		<!-- Trash button -->	    
-			<a type="button" class="" data-bs-toggle="modal" data-bs-target="#deleteModal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete permission"><i class="bi bi-trash"></i></a>
+			<a type="button" class="" data-bs-toggle="modal" data-bs-target="#deleteModal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete permission"><i class="bi bi-trash" style="font-size: 20px;"></i></a>
 		<div class="modal fade" id="deleteModal" tabindex="-1">
                 <div class="modal-dialog">
                   <div class="modal-content">
@@ -942,7 +946,7 @@
                     <td>dd-mmm-yyyy hh:mm:ss</td>
 		    <td>
 			 <!-- Edit button -->   
-		<a type="button" class="" data-bs-toggle="modal" data-bs-target="#modalDialogEditPerm2" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit permission"><i class="bi bi-pencil-square"></i></a>
+		<a type="button" class="" data-bs-toggle="modal" data-bs-target="#modalDialogEditPerm2" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit permission"><i class="bi bi-pencil-square" style="font-size: 20px;"></i></a>
               <div class="modal fade" id="modalDialogEditPerm2" tabindex="-1">
                 <div class="modal-dialog">
                   <div class="modal-content">
@@ -973,7 +977,7 @@
 			    
 			    
 		<!-- Trash button -->	    
-			<a type="button" class="" data-bs-toggle="modal" data-bs-target="#deleteModal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete permission"><i class="bi bi-trash"></i></a>
+		<a type="button" class="" data-bs-toggle="modal" data-bs-target="#deleteModal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete permission"><i class="bi bi-trash" style="font-size: 20px;"></i></a>
 		<div class="modal fade" id="deleteModal" tabindex="-1">
                 <div class="modal-dialog">
                   <div class="modal-content">

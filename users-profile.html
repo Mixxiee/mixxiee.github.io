@@ -174,7 +174,7 @@
             </a>
           </li>
           <li>
-            <a href="components-badges.html">
+            <a href="push-notification.html">
               <i class="bi bi-circle"></i><span>Push notifications</span>
             </a>
           </li>
@@ -234,26 +234,103 @@
       </nav>
     </div><!-- End Page Title -->
 
-  <!-- Balance Card -->
+<section class="section">
+      <div class="row">
+	<div class="col-xl-4">
+  
+    <!-- Balance Card -->			
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Balance</h5>
 		<bold></bold>NAf 125</bold>
-          </div>
-	<div class="card-body">
+            </div>
+	    <div class="card-body">
 		<h5 class="card-title">Weekly top-up limit</h5>
 		<div class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-          </div>
-		  </div>
+                </div>
+	   </div>
+
 	<div class="card-body">
-		  <h5 class="card-title">Weekly cash-out limit</h5>
-          	<div class="progress mt-3">
-                <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+	 <h5 class="card-title">Weekly cash-out limit</h5>
+          <div class="progress mt-3">
+                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
           </div>
-		  </div>
- </div>
-<!-- End Balance Card -->
+	</div>
+       </div>
+<!-- Balance Card -->
+
+	</div>
+		
+
+  <div class="col-xl-8">
+
+<!-- App usage Card -->		
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">App usage</h5>
+
+              <!-- Column Chart -->
+              <div id="columnChart"></div>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  new ApexCharts(document.querySelector("#columnChart"), {
+                    series: [{
+                      name: 'App usage',
+                      data: [15, 5, 7, 22, 3, 11, 8, 4, 16, 14, 2, 10]
+                    }],
+                    chart: {
+                      type: 'bar',
+                      height: 220
+                    },
+                    plotOptions: {
+                      bar: {
+                        horizontal: false,
+                        columnWidth: '55%',
+                        endingShape: 'rounded'
+                      },
+                    },
+                    dataLabels: {
+                      enabled: true
+                    },
+                    stroke: {
+                      show: true,
+                      width: 2,
+                      colors: ['transparent']
+                    },
+                    xaxis: {
+                      categories: ['Jan','Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct','Nov','Dec'],
+                    },
+                    yaxis: {
+                      title: {
+                        text: 'minutes'
+                      }
+                    },
+                    fill: {
+                      opacity: 1
+                    },
+                    tooltip: {
+                      y: {
+                        formatter: function(val) {
+                          return val + " minutes"
+                        }
+                      }
+                    }
+                  }).render();
+                });
+              </script>
+              <!-- End Column Chart -->
+		
+          </div>
+	</div>
+<!-- App usage Card -->
+
+        </div>
+
+
+	</div>
+</section>
 
 <!-- User details section -->
     <section class="section profile">
@@ -457,7 +534,7 @@
 
             <img src="assets/img/sedula.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">KYC</h5>
+              <h5 class="card-title">KYC</h5> 
 
                   <div class="row">
                     <div class="col label ">ID-number</div>
@@ -472,14 +549,15 @@
                   <div class="row">
                     <div class="col label">KYC-status</div>
                     <div class="col">
-		   <i class="bi bi-check-circle-fill green"></i>
+		   <i class="bi bi-check-circle-fill style="font-size: 25px; color: green;"></i>
 			    or
-		   <i class="bi bi-x-square-fill green"></i>
-		</div>
+		   <i class="bi bi-x-square-fill style="font-size: 25px; color: red;"></i>
+		    </div>
                   </div>
-		<h5 class="card-title"></h5>
 
-		  <button type="button" class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#redokycModal">Re-do KYC</button>
+		    <h5 class="card-title"></h5> 
+			         
+		 <button type="button" class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#redokycModal">Re-do KYC</button>
 		<div class="modal fade" id="redokycModal" tabindex="-1">
                 <div class="modal-dialog">
                   <div class="modal-content">
@@ -514,9 +592,14 @@
             <div class="card-body">
               <div class="d-flex flex-row justify-content-between align-items-center">
 
-              <h5 class="card-title">Brandon Jacob's transactions</h5>
+              <h5 class="card-title">Transactions</h5>
               <div>
-                <button type="button" class="btn btn-secondary"><i class="bi bi-download"></i></button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="dropdown"><i class="bi bi-download"></i></button>
+                  	<ul class="dropdown-menu dropdown-menu-end">
+                    	 <li><a class="dropdown-item" href="#"><i class="ri-printer-line"></i>Print</a></li>
+		     	 <li><a class="dropdown-item" href="#"><i class="ri-file-excel-2-line"></i>Csv</a></li>
+                    	 <li><a class="dropdown-item" href="#"><i class="bx bxs-file-pdf"></i>PDF</a></li>
+                  	</ul>
                 <button type="button" class="btn btn-secondary"><i class="bi bi-layout-three-columns"></i></button>
               </div>
             </div>
@@ -545,7 +628,23 @@
 		    <td>123456789</td>
                     <td>Groceries</td>
                     <td>P2P</td>
-		    <td>Succesful</td>
+		    <td>
+			<a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#unsuccessfulModal">Unsuccessful</a>
+              		<div class="modal fade" id="unsuccessfulModal" tabindex="-1">
+               	 	<div class="modal-dialog modal-sm modal-dialog-centered">
+                  	<div class="modal-content">
+                    	<div class="modal-header">
+                      	<h5 class="modal-title">Unsuccessful transaction</h5>
+                      	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    	</div>
+                    	<div class="modal-body">
+			    This payment was unsuccessful due to insufficient funds
+                      	</div>
+                  	</div>
+                	</div>
+              		</div>
+			<!-- End Small Modal-->
+		    </td>
                     <td>dd-mmm-yyyy hh:mm:ss</td>
                   <tr>
                     <th scope="row">2</th>

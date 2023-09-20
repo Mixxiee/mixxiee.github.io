@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Dashboard - CHIP admin</title>
+    <title>Team members - CHIP admin</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -179,7 +179,7 @@
               </a>
             </li>
             <li>
-              <a class="nav-link collapsed" href="components-badges.html">
+              <a class="push-notification" href="components-badges.html">
                 <i class="bi bi-circle"></i>
                 <span>Push notifications</span>
               </a>
@@ -263,11 +263,16 @@
                       <i class="bi bi-person-add"></i>
                       Add new member
                     </button>
-                    <button type="button" class="btn btn-secondary"><i class="bi bi-download"></i></button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="dropdown"><i class="bi bi-download"></i></button>
+                      <ul class="dropdown-menu dropdown-menu-end">
+                    	 <li><a class="dropdown-item" href="#"><i class="ri-printer-line"></i>Print</a></li>
+		     	             <li><a class="dropdown-item" href="#"><i class="ri-file-excel-2-line"></i>Csv</a></li>
+                    	 <li><a class="dropdown-item" href="#"><i class="bx bxs-file-pdf"></i>PDF</a></li>
+                  	</ul>
                     <button type="button" class="btn btn-secondary"><i class="bi bi-layout-three-columns"></i></button>
                   </div>
                 </div>
-                <div class="float-end">
+
                   <!-- Add new team member  -->
                   <div class="modal fade" id="modalDialogScrollable" tabindex="-1">
                     <div class="modal-dialog modal-dialog-scrollable">
@@ -355,7 +360,7 @@
                         <td>dd-mmm-yyyy hh:mm:ss</td>
                         <td>
                           <!-- Edit button -->
-                          <a type="button" class="" data-bs-toggle="modal" data-bs-target="#modalDialogScrollable2" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit team member details"><i class="bi bi-pencil-square"></i></a>
+                          <a type="button" class="" data-bs-toggle="modal" data-bs-target="#modalDialogScrollable2" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit team member details"><i class="bi bi-pencil-square" style="font-size: 20px;"></i></a>
                           <div class="modal fade" id="modalDialogScrollable2" tabindex="-1">
                             <div class="modal-dialog modal-dialog-scrollable">
                               <div class="modal-content">
@@ -413,7 +418,7 @@
                           <!-- End Edit button-->
 
                           <!-- Trash button -->
-                          <a type="button" class="" data-bs-toggle="modal" data-bs-target="#deleteModal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete team member"><i class="bi bi-trash"></i></a>
+                          <a type="button" class="" data-bs-toggle="modal" data-bs-target="#deleteModal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete team member"><i class="bi bi-trash" style="font-size: 20px;"></i></a>
                           <div class="modal fade" id="deleteModal" tabindex="-1">
                             <div class="modal-dialog">
                               <div class="modal-content">
