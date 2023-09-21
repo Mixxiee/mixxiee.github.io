@@ -425,12 +425,12 @@
                   <h5 class="card-title">Revenue <span>/Today</span></h5>
 
 <!-- Mixed Chart -->
-     <div id="mixedChart"></div>
+     <div id="stackedChart"></div>
 
     <script>
       
         document.addEventListener("DOMContentLoaded", () => {
-        new ApexCharts(document.querySelector("#mixedChart"), {
+        new ApexCharts(document.querySelector("#stackedChart"), {
            var options = {
           series: [{
           name: 'Marine Sprite',
@@ -503,7 +503,6 @@
           horizontalAlign: 'left',
           offsetX: 40
         }
-        };
                   }).render();
                 });
    </script>
