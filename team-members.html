@@ -433,33 +433,94 @@
                           <!-- End trash button -->
                         </td>
                       </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Bridie Kessler</td>
-                        <td>Developer</td>
-                        <td>35</td>
-                        <td>2014-12-05</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Ashleigh Langosh</td>
-                        <td>Finance</td>
-                        <td>45</td>
-                        <td>2011-08-12</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">4</th>
-                        <td>Angus Grady</td>
+                      <th scope="row">2</th>
+                        <td>Meredith Cruz</td>
+                        <td>+5999 555 5556</td>
+                        <td>m.cruz@example.com</td>
+                        <td>Kaya Pampuna 6</td>
                         <td>HR</td>
-                        <td>34</td>
-                        <td>2012-06-11</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">5</th>
-                        <td>Raheem Lehner</td>
-                        <td>HR</td>
-                        <td>47</td>
-                        <td>2011-04-19</td>
+                        <td>Restricted user</td>
+                        <td><span class="badge rounded-pill bg-secondary">Inactive</span></td>
+                        <td>dd-mmm-yyyy hh:mm:ss</td>
+                        <td>
+                          <!-- Edit button -->
+                          <a type="button" class="" data-bs-toggle="modal" data-bs-target="#modalDialogScrollable2" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit team member details"><i class="bi bi-pencil-square" style="font-size: 20px;"></i></a>
+                          <div class="modal fade" id="modalDialogScrollable2" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title">Edit team member</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <!-- Vertical Form -->
+                                  <form class="row g-3">
+                                    <div class="col-12">
+                                      <label for="inputNanme4" class="form-label">Full Name</label>
+                                      <input type="text" class="form-control" id="inputNanme4" placeholder="John Doe" />
+                                    </div>
+                                    <div class="col-12">
+                                      <label for="inputEmail4" class="form-label">Email</label>
+                                      <input type="email" class="form-control" id="inputEmail4" placeholder="hello@example.com" />
+                                    </div>
+                                    <div class="col-12">
+                                      <label for="inputAddress" class="form-label">Address</label>
+                                      <input type="text" class="form-control" id="inputAddress" placeholder="Kaya Mangel 7" />
+                                    </div>
+                                    <div class="col-12">
+                                      <label for="inputAddress" class="form-label">Phone number</label>
+                                      <input type="text" class="form-control" id="inputAddress" placeholder="+5999 555 5555" />
+                                    </div>
+                                    <div class="col-12">
+                                      <label for="inputAddress" class="form-label">Job title</label>
+                                      <input type="text" class="form-control" id="inputAddress" placeholder="Developer" />
+                                    </div>
+                                    <div class="col-12">
+                                      <label for="inputAddress" class="form-label">User Role</label>
+                                      <div class="col-sm-10">
+                                        <select class="form-select" aria-label="Default select example">
+                                          <option selected>Select user role</option>
+                                          <option value="1">Administrator</option>
+                                          <option value="2">Support</option>
+                                          <option value="3">Restricter user</option>
+                                          <option value="4">Manager</option>
+                                        </select>
+                                      </div>
+                                    </div>
+
+                                    <div class="text-center">
+                                      <button type="submit" class="btn btn-primary">Submit changes</button>
+                                      <button type="button" class="btn btn-secondary">Cancel</button>
+                                    </div>
+                                  </form>
+                                  <!-- Vertical Form -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End Modal Dialog Scrollable-->
+                          <!-- End Edit button-->
+
+                          <!-- Trash button -->
+                          <a type="button" class="" data-bs-toggle="modal" data-bs-target="#deleteModal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete team member"><i class="bi bi-trash" style="font-size: 20px;"></i></a>
+                          <div class="modal fade" id="deleteModal" tabindex="-1">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title">Delete user</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">Are you sure that you want to mark this user as inactive?</div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                                  <button type="submit" class="btn btn-success" data-bs-dismiss="modal">Yes</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End delete user Modal-->
+                          <!-- End trash button -->
+                        </td>
                       </tr>
                     </tbody>
                   </table>
