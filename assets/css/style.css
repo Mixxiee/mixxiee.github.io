@@ -789,8 +789,8 @@ h6 {
   font-size: 16px;
 }
 
-.minidashboard .filter .icon:hover,
-.minidashboard .filter .icon:focus {
+.dashboard .filter .icon:hover,
+.dashboard .filter .icon:focus {
   color: #4154f1;
 }
 
