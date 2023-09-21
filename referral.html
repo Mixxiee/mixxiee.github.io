@@ -236,7 +236,8 @@
  <section class="section minidashboard">
       <div class=" row align-items-top">
 	<div class="col-lg-4">
-  
+
+	<!-- Commission card -->
    	   <div class="col-sm-4 col-md-12"> 
 
               <div class="card info-card customers-card">
@@ -272,10 +273,10 @@
                 </div>
               </div>
 
-            </div><!-- End Users Card -->
+            </div><!-- End Commission Card -->
 
 
-
+	<!-- Top 5 referrers card -->	
 	   <div class="col-sm-4 col-md-12"> 
 
               <div class="card info-card customers-card">
@@ -311,7 +312,7 @@
                 </div>
               </div>
 
-            </div><!-- End Users Card -->
+            </div><!-- End Top 5 referrers Card -->
 
 	</div>
 		
@@ -321,63 +322,42 @@
 <!-- App usage Card -->		
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">App usage</h5>
+              <h5 class="card-title">Top 5 referrers</h5>
 
-              <!-- Column Chart -->
-              <div id="columnChart"></div>
+        <!-- Top 5 referrers card -->
+  	<div id="barChart"></div>
 
               <script>
                 document.addEventListener("DOMContentLoaded", () => {
-                  new ApexCharts(document.querySelector("#columnChart"), {
+                  new ApexCharts(document.querySelector("#barChart"), {
                     series: [{
-                      name: 'App usage',
-                      data: [15, 5, 7, 22, 3, 11, 8, 4, 16, 14, 2, 10]
+                      data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
                     }],
                     chart: {
                       type: 'bar',
-                      height: 200
+                      height: 350
                     },
                     plotOptions: {
                       bar: {
-                        horizontal: false,
-                        columnWidth: '55%',
-                        endingShape: 'rounded'
-                      },
+                        borderRadius: 4,
+                        horizontal: true,
+                      }
                     },
                     dataLabels: {
-                      enabled: true
-                    },
-                    stroke: {
-                      show: true,
-                      width: 2,
-                      colors: ['transparent']
+                      enabled: false
                     },
                     xaxis: {
-                      categories: ['Jan','Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct','Nov','Dec'],
-                    },
-                    yaxis: {
-                      title: {
-                        text: 'minutes'
-                      }
-                    },
-                    fill: {
-                      opacity: 1
-                    },
-                    tooltip: {
-                      y: {
-                        formatter: function(val) {
-                          return val + " minutes"
-                        }
-                      }
+                      categories: ['Name 1', 'Name 2', 'Name 3', 'Name 4', 'Name 5'
+                      ],
                     }
                   }).render();
                 });
               </script>
-              <!-- End Column Chart -->
+              <!-- End Bar Chart -->
 		
           </div>
 	</div>
-<!-- App usage Card -->
+<!-- End Top 5 referrers Card -->
 
         </div>
 
