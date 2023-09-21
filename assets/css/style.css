@@ -836,7 +836,7 @@ h6 {
 .minidashboard .card-icon {
   font-size: 32px;
   line-height: 0;
-  width: 32px;
+  width: 64px;
   height: 64px;
   flex-shrink: 0;
   flex-grow: 0;
