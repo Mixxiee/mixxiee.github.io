@@ -424,73 +424,90 @@
                 <div class="card-body">
                   <h5 class="card-title">Revenue <span>/Today</span></h5>
 
-                  <!-- Line Chart -->
-                  <div id="reportsChart"></div>
+<!-- Mixed Chart -->
+     <div id="chart"></div>
 
-                  <script>
-                    document.addEventListener("DOMContentLoaded", () => {
-                      new ApexCharts(document.querySelector("#reportsChart"), {
-                        series: [{
-                          name: 'Revenue',
-                          data: [100, 80, 60, 78, 85, 150, 90]
-                        },{
-                          name: 'Top-ups',
-                          data: [20, 4, 30, 5, 10, 10, 5]
-                        }, {
-                          name: 'Cash-outs',
-                          data: [20, 4, 10, 5, 5, 10, 5]
-                        }, {
-			  name: 'Bill payments',
-                          data: [60, 70, 15, 63, 55, 100, 70]
-			}, {
-                          name: 'P2M',
-                          data: [0, 4, 5, 5, 15, 30, 20]
-                        }],
-                        chart: {
-                          height: 350,
-                          type: 'area',
-                          toolbar: {
-                            show: false
-                          },
-                        },
-                        markers: {
-                          size: 4
-                        },
-                        colors: ['#2eca6a','#ee6666','#4154f1','#73C0DE','#ff771d'],
-                        fill: {
-                          type: "gradient",
-                          gradient: {
-                            shadeIntensity: 1,
-                            opacityFrom: 0.3,
-                            opacityTo: 0.4,
-                            stops: [0, 90, 100]
-                          }
-                        },
-                        dataLabels: {
-                          enabled: false
-                        },
-                        stroke: {
-                          curve: 'smooth',
-                          width: 2
-                        },
-                        xaxis: {
-                          type: 'datetime',
-                          categories: ["2023-09-19T00:00:00.000Z", "2023-09-19T01:30:00.000Z", "2023-09-19T02:30:00.000Z", "2023-09-19T03:30:00.000Z", "2023-09-19T04:30:00.000Z", "2023-09-19T05:30:00.000Z", "2023-09-19T06:30:00.000Z"]
-                        },
-                        tooltip: {
-                          x: {
-                            format: 'dd/MM/yy HH:mm'
-                          },
-                        }
-                      }).render();
-                    });
+    <script>
+      
+        var options = {
+          series: [{
+          name: 'TEAM A',
+          type: 'column',
+          data: [23, 11, 22, 27, 13, 22, 37, 21, 44, 22, 30]
+        }, {
+          name: 'TEAM B',
+          type: 'area',
+          data: [44, 55, 41, 67, 22, 43, 21, 41, 56, 27, 43]
+        }, {
+          name: 'TEAM C',
+          type: 'line',
+          data: [30, 25, 36, 30, 45, 35, 64, 52, 59, 36, 39]
+        }],
+          chart: {
+          height: 350,
+          type: 'line',
+          stacked: false,
+        },
+        stroke: {
+          width: [0, 2, 5],
+          curve: 'smooth'
+        },
+        plotOptions: {
+          bar: {
+            columnWidth: '50%'
+          }
+        },
+        
+        fill: {
+          opacity: [0.85, 0.25, 1],
+          gradient: {
+            inverseColors: false,
+            shade: 'light',
+            type: "vertical",
+            opacityFrom: 0.85,
+            opacityTo: 0.55,
+            stops: [0, 100, 100, 100]
+          }
+        },
+        labels: ['01/01/2003', '02/01/2003', '03/01/2003', '04/01/2003', '05/01/2003', '06/01/2003', '07/01/2003',
+          '08/01/2003', '09/01/2003', '10/01/2003', '11/01/2003'
+        ],
+        markers: {
+          size: 0
+        },
+        xaxis: {
+          type: 'datetime'
+        },
+        yaxis: {
+          title: {
+            text: 'Points',
+          },
+          min: 0
+        },
+        tooltip: {
+          shared: true,
+          intersect: false,
+          y: {
+            formatter: function (y) {
+              if (typeof y !== "undefined") {
+                return y.toFixed(0) + " points";
+              }
+              return y;
+        
+            }
+          }
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
                   </script>
-                  <!-- End revenue Chart -->
+                  <!-- End Mixed Chart -->
 
                 </div>
 
               </div>
-            </div><!-- End Reports -->		  
+            </div><!-- End Revenue Reports -->		  
  	        
 	</div>
         </div><!-- End Right side columns -->
