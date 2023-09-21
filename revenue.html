@@ -431,22 +431,15 @@
       
         document.addEventListener("DOMContentLoaded", () => {
         new ApexCharts(document.querySelector("#stackedChart"), {
-           var options = {
           series: [{
-          name: 'Marine Sprite',
+          name: 'Top-ups',
           data: [44, 55, 41, 37, 22, 43, 21]
         }, {
-          name: 'Striking Calf',
+          name: 'Cash-outs',
           data: [53, 32, 33, 52, 13, 43, 32]
         }, {
-          name: 'Tank Picture',
+          name: 'Bill payments',
           data: [12, 17, 11, 9, 15, 11, 20]
-        }, {
-          name: 'Bucket Slope',
-          data: [9, 7, 5, 8, 6, 9, 4]
-        }, {
-          name: 'Reborn Kid',
-          data: [25, 12, 19, 32, 25, 24, 10]
         }],
           chart: {
           type: 'bar',
