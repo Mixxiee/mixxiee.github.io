@@ -425,11 +425,12 @@
                   <h5 class="card-title">Revenue <span>/Today</span></h5>
 
 <!-- Mixed Chart -->
-     <div id="lineChart"></div>
+     <div id="mixedChart"></div>
 
     <script>
       
-        var options = {
+        document.addEventListener("DOMContentLoaded", () => {
+        new ApexCharts(document.querySelector("#mixedChart"), {
           series: [{
           name: 'TEAM A',
           type: 'column',
