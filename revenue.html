@@ -433,16 +433,16 @@
         new ApexCharts(document.querySelector("#stackedChart"), {
           series: [{
           name: 'Top-ups',
-          data: [44, 55, 41, 37, 22, 43, 21, 12, 45, 31, 28, 38]
+          data: [44, 55, 41, 37]
         }, {
           name: 'Cash-outs',
-          data: [53, 32, 33, 52, 13, 43, 32, 12, 25, 31, 24, 20]
+          data: [53, 32, 33, 52]
         }, {
           name: 'P2M',
-          data: [20, 30, 28, 33, 12, 21, 5, 12, 45, 21, 34, 28]
+          data: [20, 30, 28, 33]
         }, {
           name: 'Bill payments',
-          data: [12, 17, 11, 9, 15, 11, 20, 100, 45, 78, 14, 62]
+          data: [100, 150, 250, 255]
         }],
           chart: {
           type: 'bar',
@@ -472,7 +472,7 @@
           text: ''
         },
         xaxis: {
-          categories: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+          categories: [1, 2, 3, 4],
           labels: {
             formatter: function (val) {
               return val + "K"
